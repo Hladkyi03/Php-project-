@@ -1,0 +1,102 @@
+.overlay
+    display: none
+    width: 100%
+    height: 100%
+    position: fixed
+    top: 0
+    background: rgba(0, 0, 0, 0.56)
+
+.modal
+    position: absolute
+    width: 382px
+    height: 402px
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    padding: 35px
+    background: #F2F2F2
+    &__close
+        position: absolute
+        right: -30px
+        color: $main-color
+        font-size: 40px
+        line-height: 17px
+        top: 0
+        cursor: pointer
+        transition: .4s all
+        display: block
+        &:hover
+            color: $footer-hover-color
+    &__title
+        font-style: normal
+        font-weight: 700
+        font-size: 19px
+        line-height: 19px
+        text-align: center
+        color: #0D0D0D
+    &__subtitle
+        font-style: normal
+        font-weight: 700
+        font-size: 14px
+        line-height: 14px
+        text-align: center
+        color: #0D0D0D
+        margin-top: 10px
+    &_mini
+        line-height: 22px
+        height: 143px
+    &__nonclick-overlay
+        position: absolute
+        right: -30px
+        width: 22px
+        height: 17px
+        top: 0
+    &__subscribe
+        text-align: center
+        position: fixed
+        bottom: 0
+        left: 50%
+        transform: translateX(-50%)
+        width: 400px
+        height: 100px
+        background: $footer-hover-color
+        display: none
+        justify-content: center
+        gap: 20px
+        flex-direction: column
+        &_wrapper
+            display: flex
+            justify-content: center
+            width: 100%
+            gap: 20px
+        &-text
+            text-align: center
+            font-style: normal
+            font-weight: 500
+            font-size: 16px
+            line-height: 12px
+            text-align: center
+            color: #fff
+
+
+.chart-modal
+    display: none
+    border: 3px solid white
+    position: fixed
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    width: 700px
+    height: 500px
+    overflow: auto
+    z-index: 2
+    font-size: 0.75em
+    background: #F2F2F2
+
+.modal_close-chart
+    right: 0
+            
+
+
+#consultation, #order, #thanks
+    display: none

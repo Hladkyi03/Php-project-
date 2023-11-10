@@ -1,0 +1,48 @@
+.cart
+    z-index: 1
+    right: 0
+    top: 0
+    display: none
+    width: 400px
+    height: 850px
+    position: fixed
+    background: #c7c7c7
+    &__header
+        border-bottom: 1px solid #e9e9e9
+        padding: 10px
+    &_main
+        padding: 20px
+        height: 680px
+        overflow: auto
+        display: flex
+        flex-direction: column
+        align-items: center
+        overflow-x: hidden
+    &__close
+        right: 10px
+        top: 15px
+    &_price
+        display: block
+    &__submit
+        display: block
+    &_footer
+        display: flex
+        width: 100%
+        margin-top: 60px
+        gap: 30px
+        align-items: center
+        padding: 0 20px
+    &__count
+        width: 40px
+    &__delete
+        position: absolute
+        bottom: 5px
+        right: 5px
+        outline: 0
+        font-size: 14px
+        background-color: rgba(0, 0, 0, 0)
+        color: $footer-hover-color
+        border: 0
+        transition: .3s all
+        &:hover
+            color: $main-color

@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "gulp-htmlmin": "^5.0.1"
+  },
+  "devDependencies": {
+    "gulp-imagemin": "^4.1.0"
+  }
+}
