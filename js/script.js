@@ -15,6 +15,22 @@ function topFunction() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+const menu = document.querySelector('.menu'),
+    menuItem = document.querySelectorAll('.menu_item'),
+    hamburger = document.querySelector('.hamburger');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('hamburger_active');
+        menu.classList.toggle('menu_active');
+    });
+
+    menuItem.forEach(item => {
+        item.addEventListener('click', () => {
+            hamburger.classList.toggle('hamburger_active');
+            menu.classList.toggle('menu_active');
+        })
+    })
+
 const filterIcon = document.querySelector('.filter-icon');
 const sortOptions = document.querySelector('.sort-options');
 
